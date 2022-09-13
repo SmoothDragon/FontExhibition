@@ -29,7 +29,9 @@ for font in fontfiles:
         continue  # Spaces in font names cause problems
     body.append(r'\setmainfont[Extension=.'+fonttype+']{'+fontname+'}')
     body.append(r'\noindent \verb!'+font+'!')
-    body.append('\nTHE QUICK BROWN FOX jumped over the lazy dog.\n')
+    # body.append('\nTHE QUICK BROWN FOX jumped over the lazy dog.\n')
+    body.append('\nTHE QUICK BROWN FOX jumped over the lazy dog.♔♕♖♗♘♙♚♛♜♝♞♟\n')
+
 
 print(TEX_HEADER)
 print('\n'.join(body))
